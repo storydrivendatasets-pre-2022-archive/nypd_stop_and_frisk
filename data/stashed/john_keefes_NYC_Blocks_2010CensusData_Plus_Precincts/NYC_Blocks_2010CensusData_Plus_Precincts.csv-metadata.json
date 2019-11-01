@@ -1,0 +1,1014 @@
+{
+  "licenseType": "Unknown",
+  "dc:description": "This table contains 2010 Census Population data on every New York City Census Block, and also has the NYC police precinct in which that block sits (if it's within a precinct -- those in the water are not).\n\nFor details on how this table was compiled, and important info about three blocks that straddle two precincts, see http://johnkeefe.net",
+  "exportable": true,
+  "dc:title": "NYC_Blocks_2010CensusData_Plus_Precincts",
+  "attribution": "United States Census",
+  "dc:modified": "2011-04-29T02:41:45Z",
+  "dc:identifier": "1WfLvcCsTvOiMmd9j_uEtLhEkWG0ejd79JRFiEA",
+  "tableSchema": {"columns": [
+    {
+      "datatype": "double",
+      "name": "col0>>0",
+      "validateData": false,
+      "title": "geoid10"
+    },
+    {
+      "datatype": "double",
+      "name": "col1>>0",
+      "validateData": false,
+      "title": "precinct"
+    },
+    {
+      "datatype": "double",
+      "name": "col5>>1",
+      "validateData": false
+    },
+    {
+      "datatype": "double",
+      "name": "col0>>1",
+      "validateData": false,
+      "title": "SUMLEV"
+    },
+    {
+      "datatype": "double",
+      "name": "col1>>1",
+      "validateData": false,
+      "title": "STATE"
+    },
+    {
+      "datatype": "double",
+      "name": "col2>>1",
+      "validateData": false,
+      "title": "COUNTY"
+    },
+    {
+      "datatype": "double",
+      "name": "col3>>1",
+      "validateData": false,
+      "title": "TRACT"
+    },
+    {
+      "datatype": "double",
+      "name": "col4>>1",
+      "validateData": false,
+      "title": "BLOCK"
+    },
+    {
+      "datatype": "double",
+      "name": "col6>>1",
+      "validateData": false,
+      "title": "INTPTLAT"
+    },
+    {
+      "datatype": "double",
+      "name": "col7>>1",
+      "validateData": false,
+      "title": "INTPTLON"
+    },
+    {
+      "datatype": "double",
+      "name": "col8>>1",
+      "validateData": false,
+      "title": "P0010001"
+    },
+    {
+      "datatype": "double",
+      "name": "col9>>1",
+      "validateData": false,
+      "title": "P0010002"
+    },
+    {
+      "datatype": "double",
+      "name": "col10>>1",
+      "validateData": false,
+      "title": "P0010003"
+    },
+    {
+      "datatype": "double",
+      "name": "col11>>1",
+      "validateData": false,
+      "title": "P0010004"
+    },
+    {
+      "datatype": "double",
+      "name": "col12>>1",
+      "validateData": false,
+      "title": "P0010005"
+    },
+    {
+      "datatype": "double",
+      "name": "col13>>1",
+      "validateData": false,
+      "title": "P0010006"
+    },
+    {
+      "datatype": "double",
+      "name": "col14>>1",
+      "validateData": false,
+      "title": "P0010007"
+    },
+    {
+      "datatype": "double",
+      "name": "col15>>1",
+      "validateData": false,
+      "title": "P0010008"
+    },
+    {
+      "datatype": "double",
+      "name": "col16>>1",
+      "validateData": false,
+      "title": "P0010009"
+    },
+    {
+      "datatype": "double",
+      "name": "col17>>1",
+      "validateData": false,
+      "title": "P0010010"
+    },
+    {
+      "datatype": "double",
+      "name": "col18>>1",
+      "validateData": false,
+      "title": "P0010011"
+    },
+    {
+      "datatype": "double",
+      "name": "col19>>1",
+      "validateData": false,
+      "title": "P0010012"
+    },
+    {
+      "datatype": "double",
+      "name": "col20>>1",
+      "validateData": false,
+      "title": "P0010013"
+    },
+    {
+      "datatype": "double",
+      "name": "col21>>1",
+      "validateData": false,
+      "title": "P0010014"
+    },
+    {
+      "datatype": "double",
+      "name": "col22>>1",
+      "validateData": false,
+      "title": "P0010015"
+    },
+    {
+      "datatype": "double",
+      "name": "col23>>1",
+      "validateData": false,
+      "title": "P0010016"
+    },
+    {
+      "datatype": "double",
+      "name": "col24>>1",
+      "validateData": false,
+      "title": "P0010017"
+    },
+    {
+      "datatype": "double",
+      "name": "col25>>1",
+      "validateData": false,
+      "title": "P0010018"
+    },
+    {
+      "datatype": "double",
+      "name": "col26>>1",
+      "validateData": false,
+      "title": "P0010019"
+    },
+    {
+      "datatype": "double",
+      "name": "col27>>1",
+      "validateData": false,
+      "title": "P0010020"
+    },
+    {
+      "datatype": "double",
+      "name": "col28>>1",
+      "validateData": false,
+      "title": "P0010021"
+    },
+    {
+      "datatype": "double",
+      "name": "col29>>1",
+      "validateData": false,
+      "title": "P0010022"
+    },
+    {
+      "datatype": "double",
+      "name": "col30>>1",
+      "validateData": false,
+      "title": "P0010023"
+    },
+    {
+      "datatype": "double",
+      "name": "col31>>1",
+      "validateData": false,
+      "title": "P0010024"
+    },
+    {
+      "datatype": "double",
+      "name": "col32>>1",
+      "validateData": false,
+      "title": "P0010025"
+    },
+    {
+      "datatype": "double",
+      "name": "col33>>1",
+      "validateData": false,
+      "title": "P0010026"
+    },
+    {
+      "datatype": "double",
+      "name": "col34>>1",
+      "validateData": false,
+      "title": "P0010027"
+    },
+    {
+      "datatype": "double",
+      "name": "col35>>1",
+      "validateData": false,
+      "title": "P0010028"
+    },
+    {
+      "datatype": "double",
+      "name": "col36>>1",
+      "validateData": false,
+      "title": "P0010029"
+    },
+    {
+      "datatype": "double",
+      "name": "col37>>1",
+      "validateData": false,
+      "title": "P0010030"
+    },
+    {
+      "datatype": "double",
+      "name": "col38>>1",
+      "validateData": false,
+      "title": "P0010031"
+    },
+    {
+      "datatype": "double",
+      "name": "col39>>1",
+      "validateData": false,
+      "title": "P0010032"
+    },
+    {
+      "datatype": "double",
+      "name": "col40>>1",
+      "validateData": false,
+      "title": "P0010033"
+    },
+    {
+      "datatype": "double",
+      "name": "col41>>1",
+      "validateData": false,
+      "title": "P0010034"
+    },
+    {
+      "datatype": "double",
+      "name": "col42>>1",
+      "validateData": false,
+      "title": "P0010035"
+    },
+    {
+      "datatype": "double",
+      "name": "col43>>1",
+      "validateData": false,
+      "title": "P0010036"
+    },
+    {
+      "datatype": "double",
+      "name": "col44>>1",
+      "validateData": false,
+      "title": "P0010037"
+    },
+    {
+      "datatype": "double",
+      "name": "col45>>1",
+      "validateData": false,
+      "title": "P0010038"
+    },
+    {
+      "datatype": "double",
+      "name": "col46>>1",
+      "validateData": false,
+      "title": "P0010039"
+    },
+    {
+      "datatype": "double",
+      "name": "col47>>1",
+      "validateData": false,
+      "title": "P0010040"
+    },
+    {
+      "datatype": "double",
+      "name": "col48>>1",
+      "validateData": false,
+      "title": "P0010041"
+    },
+    {
+      "datatype": "double",
+      "name": "col49>>1",
+      "validateData": false,
+      "title": "P0010042"
+    },
+    {
+      "datatype": "double",
+      "name": "col50>>1",
+      "validateData": false,
+      "title": "P0010043"
+    },
+    {
+      "datatype": "double",
+      "name": "col51>>1",
+      "validateData": false,
+      "title": "P0010044"
+    },
+    {
+      "datatype": "double",
+      "name": "col52>>1",
+      "validateData": false,
+      "title": "P0010045"
+    },
+    {
+      "datatype": "double",
+      "name": "col53>>1",
+      "validateData": false,
+      "title": "P0010046"
+    },
+    {
+      "datatype": "double",
+      "name": "col54>>1",
+      "validateData": false,
+      "title": "P0010047"
+    },
+    {
+      "datatype": "double",
+      "name": "col55>>1",
+      "validateData": false,
+      "title": "P0010048"
+    },
+    {
+      "datatype": "double",
+      "name": "col56>>1",
+      "validateData": false,
+      "title": "P0010049"
+    },
+    {
+      "datatype": "double",
+      "name": "col57>>1",
+      "validateData": false,
+      "title": "P0010050"
+    },
+    {
+      "datatype": "double",
+      "name": "col58>>1",
+      "validateData": false,
+      "title": "P0010051"
+    },
+    {
+      "datatype": "double",
+      "name": "col59>>1",
+      "validateData": false,
+      "title": "P0010052"
+    },
+    {
+      "datatype": "double",
+      "name": "col60>>1",
+      "validateData": false,
+      "title": "P0010053"
+    },
+    {
+      "datatype": "double",
+      "name": "col61>>1",
+      "validateData": false,
+      "title": "P0010054"
+    },
+    {
+      "datatype": "double",
+      "name": "col62>>1",
+      "validateData": false,
+      "title": "P0010055"
+    },
+    {
+      "datatype": "double",
+      "name": "col63>>1",
+      "validateData": false,
+      "title": "P0010056"
+    },
+    {
+      "datatype": "double",
+      "name": "col64>>1",
+      "validateData": false,
+      "title": "P0010057"
+    },
+    {
+      "datatype": "double",
+      "name": "col65>>1",
+      "validateData": false,
+      "title": "P0010058"
+    },
+    {
+      "datatype": "double",
+      "name": "col66>>1",
+      "validateData": false,
+      "title": "P0010059"
+    },
+    {
+      "datatype": "double",
+      "name": "col67>>1",
+      "validateData": false,
+      "title": "P0010060"
+    },
+    {
+      "datatype": "double",
+      "name": "col68>>1",
+      "validateData": false,
+      "title": "P0010061"
+    },
+    {
+      "datatype": "double",
+      "name": "col69>>1",
+      "validateData": false,
+      "title": "P0010062"
+    },
+    {
+      "datatype": "double",
+      "name": "col70>>1",
+      "validateData": false,
+      "title": "P0010063"
+    },
+    {
+      "datatype": "double",
+      "name": "col71>>1",
+      "validateData": false,
+      "title": "P0010064"
+    },
+    {
+      "datatype": "double",
+      "name": "col72>>1",
+      "validateData": false,
+      "title": "P0010065"
+    },
+    {
+      "datatype": "double",
+      "name": "col73>>1",
+      "validateData": false,
+      "title": "P0010066"
+    },
+    {
+      "datatype": "double",
+      "name": "col74>>1",
+      "validateData": false,
+      "title": "P0010067"
+    },
+    {
+      "datatype": "double",
+      "name": "col75>>1",
+      "validateData": false,
+      "title": "P0010068"
+    },
+    {
+      "datatype": "double",
+      "name": "col76>>1",
+      "validateData": false,
+      "title": "P0010069"
+    },
+    {
+      "datatype": "double",
+      "name": "col77>>1",
+      "validateData": false,
+      "title": "P0010070"
+    },
+    {
+      "datatype": "double",
+      "name": "col78>>1",
+      "validateData": false,
+      "title": "P0010071"
+    },
+    {
+      "datatype": "double",
+      "name": "col79>>1",
+      "validateData": false,
+      "title": "P0020001"
+    },
+    {
+      "datatype": "double",
+      "name": "col80>>1",
+      "validateData": false,
+      "title": "P0020002"
+    },
+    {
+      "datatype": "double",
+      "name": "col81>>1",
+      "validateData": false,
+      "title": "P0020003"
+    },
+    {
+      "datatype": "double",
+      "name": "col82>>1",
+      "validateData": false,
+      "title": "P0020004"
+    },
+    {
+      "datatype": "double",
+      "name": "col83>>1",
+      "validateData": false,
+      "title": "P0020005"
+    },
+    {
+      "datatype": "double",
+      "name": "col84>>1",
+      "validateData": false,
+      "title": "P0020006"
+    },
+    {
+      "datatype": "double",
+      "name": "col85>>1",
+      "validateData": false,
+      "title": "P0020007"
+    },
+    {
+      "datatype": "double",
+      "name": "col86>>1",
+      "validateData": false,
+      "title": "P0020008"
+    },
+    {
+      "datatype": "double",
+      "name": "col87>>1",
+      "validateData": false,
+      "title": "P0020009"
+    },
+    {
+      "datatype": "double",
+      "name": "col88>>1",
+      "validateData": false,
+      "title": "P0020010"
+    },
+    {
+      "datatype": "double",
+      "name": "col89>>1",
+      "validateData": false,
+      "title": "P0020011"
+    },
+    {
+      "datatype": "double",
+      "name": "col90>>1",
+      "validateData": false,
+      "title": "P0020012"
+    },
+    {
+      "datatype": "double",
+      "name": "col91>>1",
+      "validateData": false,
+      "title": "P0020013"
+    },
+    {
+      "datatype": "double",
+      "name": "col92>>1",
+      "validateData": false,
+      "title": "P0020014"
+    },
+    {
+      "datatype": "double",
+      "name": "col93>>1",
+      "validateData": false,
+      "title": "P0020015"
+    },
+    {
+      "datatype": "double",
+      "name": "col94>>1",
+      "validateData": false,
+      "title": "P0020016"
+    },
+    {
+      "datatype": "double",
+      "name": "col95>>1",
+      "validateData": false,
+      "title": "P0020017"
+    },
+    {
+      "datatype": "double",
+      "name": "col96>>1",
+      "validateData": false,
+      "title": "P0020018"
+    },
+    {
+      "datatype": "double",
+      "name": "col97>>1",
+      "validateData": false,
+      "title": "P0020019"
+    },
+    {
+      "datatype": "double",
+      "name": "col98>>1",
+      "validateData": false,
+      "title": "P0020020"
+    },
+    {
+      "datatype": "double",
+      "name": "col99>>1",
+      "validateData": false,
+      "title": "P0020021"
+    },
+    {
+      "datatype": "double",
+      "name": "col100>>1",
+      "validateData": false,
+      "title": "P0020022"
+    },
+    {
+      "datatype": "double",
+      "name": "col101>>1",
+      "validateData": false,
+      "title": "P0020023"
+    },
+    {
+      "datatype": "double",
+      "name": "col102>>1",
+      "validateData": false,
+      "title": "P0020024"
+    },
+    {
+      "datatype": "double",
+      "name": "col103>>1",
+      "validateData": false,
+      "title": "P0020025"
+    },
+    {
+      "datatype": "double",
+      "name": "col104>>1",
+      "validateData": false,
+      "title": "P0020026"
+    },
+    {
+      "datatype": "double",
+      "name": "col105>>1",
+      "validateData": false,
+      "title": "P0020027"
+    },
+    {
+      "datatype": "double",
+      "name": "col106>>1",
+      "validateData": false,
+      "title": "P0020028"
+    },
+    {
+      "datatype": "double",
+      "name": "col107>>1",
+      "validateData": false,
+      "title": "P0020029"
+    },
+    {
+      "datatype": "double",
+      "name": "col108>>1",
+      "validateData": false,
+      "title": "P0020030"
+    },
+    {
+      "datatype": "double",
+      "name": "col109>>1",
+      "validateData": false,
+      "title": "P0020031"
+    },
+    {
+      "datatype": "double",
+      "name": "col110>>1",
+      "validateData": false,
+      "title": "P0020032"
+    },
+    {
+      "datatype": "double",
+      "name": "col111>>1",
+      "validateData": false,
+      "title": "P0020033"
+    },
+    {
+      "datatype": "double",
+      "name": "col112>>1",
+      "validateData": false,
+      "title": "P0020034"
+    },
+    {
+      "datatype": "double",
+      "name": "col113>>1",
+      "validateData": false,
+      "title": "P0020035"
+    },
+    {
+      "datatype": "double",
+      "name": "col114>>1",
+      "validateData": false,
+      "title": "P0020036"
+    },
+    {
+      "datatype": "double",
+      "name": "col115>>1",
+      "validateData": false,
+      "title": "P0020037"
+    },
+    {
+      "datatype": "double",
+      "name": "col116>>1",
+      "validateData": false,
+      "title": "P0020038"
+    },
+    {
+      "datatype": "double",
+      "name": "col117>>1",
+      "validateData": false,
+      "title": "P0020039"
+    },
+    {
+      "datatype": "double",
+      "name": "col118>>1",
+      "validateData": false,
+      "title": "P0020040"
+    },
+    {
+      "datatype": "double",
+      "name": "col119>>1",
+      "validateData": false,
+      "title": "P0020041"
+    },
+    {
+      "datatype": "double",
+      "name": "col120>>1",
+      "validateData": false,
+      "title": "P0020042"
+    },
+    {
+      "datatype": "double",
+      "name": "col121>>1",
+      "validateData": false,
+      "title": "P0020043"
+    },
+    {
+      "datatype": "double",
+      "name": "col122>>1",
+      "validateData": false,
+      "title": "P0020044"
+    },
+    {
+      "datatype": "double",
+      "name": "col123>>1",
+      "validateData": false,
+      "title": "P0020045"
+    },
+    {
+      "datatype": "double",
+      "name": "col124>>1",
+      "validateData": false,
+      "title": "P0020046"
+    },
+    {
+      "datatype": "double",
+      "name": "col125>>1",
+      "validateData": false,
+      "title": "P0020047"
+    },
+    {
+      "datatype": "double",
+      "name": "col126>>1",
+      "validateData": false,
+      "title": "P0020048"
+    },
+    {
+      "datatype": "double",
+      "name": "col127>>1",
+      "validateData": false,
+      "title": "P0020049"
+    },
+    {
+      "datatype": "double",
+      "name": "col128>>1",
+      "validateData": false,
+      "title": "P0020050"
+    },
+    {
+      "datatype": "double",
+      "name": "col129>>1",
+      "validateData": false,
+      "title": "P0020051"
+    },
+    {
+      "datatype": "double",
+      "name": "col130>>1",
+      "validateData": false,
+      "title": "P0020052"
+    },
+    {
+      "datatype": "double",
+      "name": "col131>>1",
+      "validateData": false,
+      "title": "P0020053"
+    },
+    {
+      "datatype": "double",
+      "name": "col132>>1",
+      "validateData": false,
+      "title": "P0020054"
+    },
+    {
+      "datatype": "double",
+      "name": "col133>>1",
+      "validateData": false,
+      "title": "P0020055"
+    },
+    {
+      "datatype": "double",
+      "name": "col134>>1",
+      "validateData": false,
+      "title": "P0020056"
+    },
+    {
+      "datatype": "double",
+      "name": "col135>>1",
+      "validateData": false,
+      "title": "P0020057"
+    },
+    {
+      "datatype": "double",
+      "name": "col136>>1",
+      "validateData": false,
+      "title": "P0020058"
+    },
+    {
+      "datatype": "double",
+      "name": "col137>>1",
+      "validateData": false,
+      "title": "P0020059"
+    },
+    {
+      "datatype": "double",
+      "name": "col138>>1",
+      "validateData": false,
+      "title": "P0020060"
+    },
+    {
+      "datatype": "double",
+      "name": "col139>>1",
+      "validateData": false,
+      "title": "P0020061"
+    },
+    {
+      "datatype": "double",
+      "name": "col140>>1",
+      "validateData": false,
+      "title": "P0020062"
+    },
+    {
+      "datatype": "double",
+      "name": "col141>>1",
+      "validateData": false,
+      "title": "P0020063"
+    },
+    {
+      "datatype": "double",
+      "name": "col142>>1",
+      "validateData": false,
+      "title": "P0020064"
+    },
+    {
+      "datatype": "double",
+      "name": "col143>>1",
+      "validateData": false,
+      "title": "P0020065"
+    },
+    {
+      "datatype": "double",
+      "name": "col144>>1",
+      "validateData": false,
+      "title": "P0020066"
+    },
+    {
+      "datatype": "double",
+      "name": "col145>>1",
+      "validateData": false,
+      "title": "P0020067"
+    },
+    {
+      "datatype": "double",
+      "name": "col146>>1",
+      "validateData": false,
+      "title": "P0020068"
+    },
+    {
+      "datatype": "double",
+      "name": "col147>>1",
+      "validateData": false,
+      "title": "P0020069"
+    },
+    {
+      "datatype": "double",
+      "name": "col148>>1",
+      "validateData": false,
+      "title": "P0020070"
+    },
+    {
+      "datatype": "double",
+      "name": "col149>>1",
+      "validateData": false,
+      "title": "P0020071"
+    },
+    {
+      "datatype": "double",
+      "name": "col150>>1",
+      "validateData": false,
+      "title": "P0020072"
+    },
+    {
+      "datatype": "double",
+      "name": "col151>>1",
+      "validateData": false,
+      "title": "P0020073"
+    },
+    {
+      "datatype": "double",
+      "name": "col2>>2",
+      "validateData": false,
+      "title": "Precinct"
+    },
+    {
+      "datatype": "location",
+      "name": "col0>>2",
+      "validateData": false,
+      "title": "geometry"
+    },
+    {
+      "datatype": "double",
+      "name": "col1>>2",
+      "validateData": false,
+      "title": "geometry_vertex_count"
+    },
+    {
+      "datatype": "double",
+      "name": "col3>>2",
+      "validateData": false,
+      "title": "SHAPE_Leng"
+    },
+    {
+      "datatype": "double",
+      "name": "col4>>2",
+      "validateData": false,
+      "title": "SHAPE_Area"
+    },
+    {
+      "datatype": "string",
+      "formatPattern": "<a href='%1$s'>%1$s<\/a>",
+      "name": "col5>>2",
+      "validateData": false,
+      "title": "import_notes"
+    },
+    {
+      "datatype": "location",
+      "name": "col0>>3",
+      "validateData": false,
+      "title": "geometry"
+    },
+    {
+      "datatype": "double",
+      "name": "col2>>3",
+      "validateData": false,
+      "title": "Precinct"
+    },
+    {
+      "datatype": "double",
+      "name": "col3>>3",
+      "validateData": false,
+      "title": "SHAPE_Leng"
+    },
+    {
+      "datatype": "double",
+      "name": "col4>>3",
+      "validateData": false,
+      "title": "SHAPE_Area"
+    },
+    {
+      "datatype": "string",
+      "name": "col5>>3",
+      "validateData": false,
+      "title": "import_notes"
+    },
+    {
+      "datatype": "double",
+      "name": "col0>>4",
+      "validateData": false,
+      "title": "geoid10"
+    },
+    {
+      "datatype": "double",
+      "name": "col1>>4",
+      "validateData": false,
+      "title": "precinct"
+    }
+  ]},
+  "sql": "SELECT T1.'geoid10', T1.'precinct', T2.'SUMLEV', T2.'STATE', T2.'COUNTY', T2.'TRACT', T2.'BLOCK', T2.'INTPTLAT', T2.'INTPTLON', T2.'P0010001', T2.'P0010002', T2.'P0010003', T2.'P0010004', T2.'P0010005', T2.'P0010006', T2.'P0010007', T2.'P0010008', T2.'P0010009', T2.'P0010010', T2.'P0010011', T2.'P0010012', T2.'P0010013', T2.'P0010014', T2.'P0010015', T2.'P0010016', T2.'P0010017', T2.'P0010018', T2.'P0010019', T2.'P0010020', T2.'P0010021', T2.'P0010022', T2.'P0010023', T2.'P0010024', T2.'P0010025', T2.'P0010026', T2.'P0010027', T2.'P0010028', T2.'P0010029', T2.'P0010030', T2.'P0010031', T2.'P0010032', T2.'P0010033', T2.'P0010034', T2.'P0010035', T2.'P0010036', T2.'P0010037', T2.'P0010038', T2.'P0010039', T2.'P0010040', T2.'P0010041', T2.'P0010042', T2.'P0010043', T2.'P0010044', T2.'P0010045', T2.'P0010046', T2.'P0010047', T2.'P0010048', T2.'P0010049', T2.'P0010050', T2.'P0010051', T2.'P0010052', T2.'P0010053', T2.'P0010054', T2.'P0010055', T2.'P0010056', T2.'P0010057', T2.'P0010058', T2.'P0010059', T2.'P0010060', T2.'P0010061', T2.'P0010062', T2.'P0010063', T2.'P0010064', T2.'P0010065', T2.'P0010066', T2.'P0010067', T2.'P0010068', T2.'P0010069', T2.'P0010070', T2.'P0010071', T2.'P0020001', T2.'P0020002', T2.'P0020003', T2.'P0020004', T2.'P0020005', T2.'P0020006', T2.'P0020007', T2.'P0020008', T2.'P0020009', T2.'P0020010', T2.'P0020011', T2.'P0020012', T2.'P0020013', T2.'P0020014', T2.'P0020015', T2.'P0020016', T2.'P0020017', T2.'P0020018', T2.'P0020019', T2.'P0020020', T2.'P0020021', T2.'P0020022', T2.'P0020023', T2.'P0020024', T2.'P0020025', T2.'P0020026', T2.'P0020027', T2.'P0020028', T2.'P0020029', T2.'P0020030', T2.'P0020031', T2.'P0020032', T2.'P0020033', T2.'P0020034', T2.'P0020035', T2.'P0020036', T2.'P0020037', T2.'P0020038', T2.'P0020039', T2.'P0020040', T2.'P0020041', T2.'P0020042', T2.'P0020043', T2.'P0020044', T2.'P0020045', T2.'P0020046', T2.'P0020047', T2.'P0020048', T2.'P0020049', T2.'P0020050', T2.'P0020051', T2.'P0020052', T2.'P0020053', T2.'P0020054', T2.'P0020055', T2.'P0020056', T2.'P0020057', T2.'P0020058', T2.'P0020059', T2.'P0020060', T2.'P0020061', T2.'P0020062', T2.'P0020063', T2.'P0020064', T2.'P0020065', T2.'P0020066', T2.'P0020067', T2.'P0020068', T2.'P0020069', T2.'P0020070', T2.'P0020071', T2.'P0020072', T2.'P0020073', T3.'geometry', T3.'geometry_vertex_count', T3.'SHAPE_Leng', T3.'SHAPE_Area', T3.'import_notes', T4.'Precinct', T4.'SHAPE_Leng', T4.'SHAPE_Area', T4.'import_notes', T5.'precinct' FROM 1xT_fDP0Vsgk4LGAx8MsTiZGzqrPkrnYPp6smag AS T1 LEFT OUTER JOIN 1rxy8ycg9ZsRZG7z9sNQdottvAwIaNVCNCRKr9Q AS T2 ON T1.'geoid10' = T2.'GEOID10' LEFT OUTER JOIN 1WFjZnB0xO-WAWmzvfg9ZqBXpxSBf-MjtG3M-3tg AS T3 ON T1.'geoid10' = T3.'Precinct' LEFT OUTER JOIN 1SUukdViAn9-AdQ4kIJhzJ5hzOyKzuEEdSsFFxg AS T4 ON T1.'geoid10' = T4.'geometry' LEFT OUTER JOIN 187uhfig-VBQUe5evS9mfRNOR_YXZsOavTh7FKHQ AS T5 ON T1.'geoid10' = T5.'geoid10'"
+}
