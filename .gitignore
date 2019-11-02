@@ -1,4 +1,13 @@
-# Made special for CompCiv 2018
+# The following files are too big to commit
+2005.csv
+2006.csv
+2007.csv
+2008.csv
+2009.csv
+2010.csv
+2011.csv
+2012.csv
+
 
 # names for data stash folders that shouldn't be committed
 _drafts/

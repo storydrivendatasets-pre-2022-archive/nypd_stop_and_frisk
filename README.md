@@ -1,6 +1,16 @@
 # NYPD Stop and Frisk
 
 
+# The data
+
+Note: This repo does not contain the extracted CSVs from zip files 2005-2012, because they are too large (100MB+ each). Run the default [Makefile](Makefile) task:
+
+```sh
+$ make
+# i.e. `make extract_csvs`
+```
+
+
 
 ## Census and Precinct data
 
