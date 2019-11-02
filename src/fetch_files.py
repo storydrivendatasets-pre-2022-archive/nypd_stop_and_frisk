@@ -15,10 +15,9 @@ def fetch_single_year(year):
     """
     TODO: Write Makefile to do single year fetching if necessary
     """
-    yrstr = str(year)
-    href = next((h for h in HREFS if str(yrstr) in h and re.match(r'\d{4}', yrstr)), False)
+    href = next((h for h in HREFS if str(year) in h and re.match(r'\d{4}', tear)), False)
     if not href:
-        raise ValueError(f'Unexpected year string: {yrstr}')
+        raise ValueError(f'Unexpected year string: {year}')
     else:
         fetch_and_write(href)
 
@@ -46,8 +45,9 @@ def main():
 
 
 if __name__ == '__main__':
-    if argv[1]:
-        fetch_single_year(argv[1])
+    if len(argv) > 1:
+        year = re.search(r'20\d\d', argv[1]).group()
+        extract_single_year(year)
     else:
         main()
 

@@ -3,6 +3,7 @@
 import csv
 from pathlib import Path
 import re
+from sys import argv
 from xlrd import open_workbook, XL_CELL_DATE, xldate_as_datetime
 from zipfile import ZipFile
 
@@ -30,8 +31,7 @@ def extract_csv_from_xlsx(fpath):
     return data
 
 
-def process_xlsxes():
-    srcpaths = sorted(SRC_DIR.joinpath('xlsx').glob('*.xlsx'))
+def process_xlsxes(srcpaths):
     for src in srcpaths:
         print("Opening", src)
         data = extract_csv_from_xlsx(src)
@@ -41,8 +41,7 @@ def process_xlsxes():
             outs = csv.writer(w)
             outs.writerows(data)
 
-def process_zips():
-    srcpaths = sorted(SRC_DIR.joinpath('zip').glob('*.zip'))
+def process_zips(srcpaths):
     for src in srcpaths:
         fname, txt = extract_csv_from_zip(src)
         print("Read", fname, "from:", src)
@@ -59,9 +58,25 @@ def extract_csv_from_zip(fpath):
     return (f.filename, z.read(f))
 
 
+def extract_single_year(year):
+    fname = next(SRC_DIR.glob(f'**/{year}.*'), False)
+    if not fname:
+        raise ValueError(f'Unexpected year value: {year}')
+    else:
+        if 'zip' in str(fname):
+            process_zips([fname])
+        elif 'xlsx' in str(fname):
+            process_xlsxes([fname])
+        else:
+            raise ValueError(f'Did not find zip/csv path; found: {fname}')
+
 def main():
-    process_zips()
-    process_xlsxes()
+    process_zips(sorted(SRC_DIR.joinpath('zip').glob('*.zip')))
+    process_xlsxes(sorted(SRC_DIR.joinpath('xlsx').glob('*.xlsx')))
 
 if __name__ == '__main__':
-    main()
+    if len(argv) > 1:
+        year = re.search(r'20\d\d', argv[1]).group()
+        extract_single_year(year)
+    else:
+        main()
