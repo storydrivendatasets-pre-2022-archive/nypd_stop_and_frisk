@@ -1,0 +1,16 @@
+/assets/nypd/downloads/excel/analysis_and_planning/stop-question-frisk/sqf-2018.xlsx
+/assets/nypd/downloads/excel/analysis_and_planning/stop-question-frisk/sqf-2017.xlsx
+/assets/nypd/downloads/excel/analysis_and_planning/stop-question-frisk/sqf-2016.csv
+/assets/nypd/downloads/excel/analysis_and_planning/stop-question-frisk/sqf-2015.csv
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2014-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2013-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2012-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2011-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2010-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2009-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2008-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2007-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2006-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2005-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2004-csv.zip
+/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2003-csv.zip
