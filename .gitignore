@@ -7,8 +7,8 @@
 2010.csv
 2011.csv
 2012.csv
-
-
+*.sqlite
+*.sqlite-journal
 # names for data stash folders that shouldn't be committed
 _drafts/
 datastash/

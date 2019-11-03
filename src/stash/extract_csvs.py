@@ -4,7 +4,7 @@ import csv
 from pathlib import Path
 import re
 from sys import argv
-from xlrd import open_workbook, XL_CELL_DATE, xldate_as_datetime
+from openpyxl import load_workbook
 from zipfile import ZipFile
 
 SRC_DIR = Path('data', 'stashed', 'nypd')
@@ -12,23 +12,22 @@ DEST_DIR = SRC_DIR.joinpath('csv')
 
 
 def extract_csv_from_xlsx(fpath):
-    book = open_workbook(fpath)
-    sheet = book.sheets()[0]
-    colcount = sheet.row_len(0)
-    rowcount = sheet.nrows
+    book = load_workbook(fpath)
+    sheet = book.active
 
     data = []
-    for i in range(rowcount):
-        drow = []
-        for j in range(colcount):
-            cell = sheet.cell(i, j)
-            if cell.ctype == XL_CELL_DATE:
-                val = xldate_as_datetime(cell.value, book.datemode).isoformat()[0:10]
-            else:
-                val = cell.value
-            drow.append(val)
-        data.append(drow)
+    for row in sheet.rows:
+        data.append(cell.value if not cell.is_date else fix_cell_date(cell) for cell in row)
+
     return data
+
+def fix_cell_date(cell):
+    val = cell.value
+    if cell.number_format in ('h:mm:ss;@', 'h:mm:ss'):
+        val = val.strftime('%H:%M:%S')
+    elif cell.number_format == 'mm-dd-yy':
+        val = val.strftime('%m/%d/%Y') # preserve the non iso-format for now
+    return val
 
 
 def process_xlsxes(srcpaths):
