@@ -11,11 +11,11 @@ csvs: $(ALL_CSVS)
 
 extract:
 	# do a refresh no matter what
-	./src/extract_csvs.py
+	./src/stash/extract_csvs.py
 
 fetch:
 	# do a refresh no matter what
-	./src/fetch_files.py
+	./src/stash/fetch_files.py
 
 clean:
 	rm -r ./data/stashed/nypd/*

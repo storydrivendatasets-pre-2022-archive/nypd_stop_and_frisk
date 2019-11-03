@@ -20,11 +20,12 @@ ALL_FILES = $(ZIP_FILENAMES) $(CSV_FILENAMES) $(XLSX_FILENAMES)
 ALL_CSVS = $(ZIP_CSVNAMES) $(CSV_FILENAMES) $(XLSX_CSVNAMES)
 
 $(ALL_FILES) :
-	./src/fetch_files.py $(notdir $@)
+	# the fetching process
+	./src/stash/fetch_files.py $(notdir $@)
 
 $(ZIP_CSVNAMES) $(XLSX_CSVNAMES):
 	# these files require extraction process
-	./src/extract_csvs.py $(notdir $@)
+	./src/stash/extract_csvs.py $(notdir $@)
 
 
 
