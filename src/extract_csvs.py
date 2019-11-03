@@ -32,6 +32,7 @@ def extract_csv_from_xlsx(fpath):
 
 
 def process_xlsxes(srcpaths):
+    DEST_DIR.mkdir(exist_ok=True, parents=True)
     for src in srcpaths:
         print("Opening", src)
         data = extract_csv_from_xlsx(src)
@@ -42,6 +43,7 @@ def process_xlsxes(srcpaths):
             outs.writerows(data)
 
 def process_zips(srcpaths):
+    DEST_DIR.mkdir(exist_ok=True, parents=True)
     for src in srcpaths:
         fname, txt = extract_csv_from_zip(src)
         print("Read", fname, "from:", src)
