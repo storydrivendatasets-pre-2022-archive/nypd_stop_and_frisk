@@ -13,16 +13,18 @@ reboot: clean sqlize
 
 csvs: $(ALL_CSVS)
 
-extract:
-	# do a refresh no matter what
-	./src/stash/extract_csvs.py
-
-fetch:
-	# do a refresh no matter what
-	./src/stash/fetch_files.py
-
 clean: sqlize_clean
 	rm -r ./data/stashed/nypd/*
+
+
+
+# do a refresh no matter what
+extract:
+	./src/stash/extract_csvs.py
+
+# do a refresh no matter what
+fetch:
+	./src/stash/fetch_files.py
 
 
 

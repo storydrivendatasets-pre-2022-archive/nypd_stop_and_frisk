@@ -7,8 +7,13 @@ Note: This repo does not contain the extracted CSVs from zip files 2005-2012, be
 
 ```sh
 $ make
-# i.e. `make extract_csvs`
+# i.e. `make sqlize`
 ```
+
+# The scripts and stuff
+
+Note: The shell scripts used to build the import SQL is in src/sqlite/genscripts. It's a kind of meta script, if you will
+
 
 
 

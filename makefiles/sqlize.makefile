@@ -1,21 +1,31 @@
-
-SQLIZED_SCHEMA_DIR = data/sqlized/schemas
-SQLIZED_DBSCHEMA = data/sqlized/schemas/blank.sqlite
+SQLIZED_DIR = data/sqlized
+SQLIZED_SCRIPTS_DIR = $(SQLIZED_DIR)/scripts
 SQLIZED_DBNAME = data/sqlized/nypd_stop_and_frisk.sqlite
-
+# Note that the src/sqlize/import sql script is "baked" out by *another* script
+# located in src/sqlize/genscripts
+# This is because the import sql could theoretically be written out by hand,
+#  e.g. by someone who doesn't know how to shell script. But I am not that someone
+SQL_SCRIPT_IMPORT_RAW = src/sqlize/import_raw.sql
 
 sqlize_clean:
-	test -d data/sqlized/  && rm -r data/sqlized/ || true
+	test -f $(SQLIZED_DBNAME)  && rm $(SQLIZED_DBNAME) || true
+	test -f $(SQL_SCRIPT_IMPORT_RAW)  && rm $(SQL_SCRIPT_IMPORT_RAW) || true
 
 
-sqlize_import_raw: $(SQLIZED_DBNAME)
+sqlize_scripts: $(SQL_SCRIPT_IMPORT_RAW)
 
-$(SQLIZED_DBNAME): csvs
-	mkdir -p $(dir $(SQLIZED_DBNAME))
-	./src/sqlize/import_raw_csvs.sh $(SQLIZED_DBNAME)
 
-sqlize_schemas: $(SQLIZED_DBSCHEMA)
+$(SQL_SCRIPT_IMPORT_RAW): csvs
+	./src/sqlize/genscripts/generate_import_raw_sql.sh \
+		data/stashed/nypd/csv \
+		> $@
 
-$(SQLIZED_DBSCHEMA): csvs
-	mkdir -p $(dir $(SQLIZED_DBSCHEMA))
-	./src/sqlize/generate_schemas.sh $(SQLIZED_DBSCHEMA)
+sqlize_import_raw: $(SQL_SCRIPT_IMPORT_RAW)
+	sqlite3 $(SQLIZED_DBNAME) < $(SQL_SCRIPT_IMPORT_RAW)
+
+
+# sqlize_schemas: $(SQLIZED_DBSCHEMA)
+
+# $(SQLIZED_DBSCHEMA): csvs
+# 	mkdir -p $(dir $(SQLIZED_DBSCHEMA))
+# 	./src/sqlize/generate_schemas.sh $(SQLIZED_DBSCHEMA)
