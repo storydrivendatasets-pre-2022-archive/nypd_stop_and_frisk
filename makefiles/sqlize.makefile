@@ -23,6 +23,8 @@ $(SQL_SCRIPT_IMPORT_RAW): csvs
 sqlize_import_raw: $(SQL_SCRIPT_IMPORT_RAW)
 	sqlite3 $(SQLIZED_DBNAME) < $(SQL_SCRIPT_IMPORT_RAW)
 
+sqlize_quick_unify: sqlize_import_raw
+	sqlite3 $(SQLIZED_DBNAME) < src/sqlize/quick_unify_beta.sql
 
 # sqlize_schemas: $(SQLIZED_DBSCHEMA)
 

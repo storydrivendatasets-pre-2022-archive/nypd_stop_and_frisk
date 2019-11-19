@@ -15,8 +15,6 @@ $ make
 Note: The shell scripts used to build the import SQL is in src/sqlite/genscripts. It's a kind of meta script, if you will
 
 
-
-
 ## Census and Precinct data
 
 Courtesy of John Keefe, from this Fusion Table:
@@ -51,3 +49,48 @@ https://www1.nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page
 
 - Join with demographic data
 - Explore the schemas and import/clean as many common fields as possible
+
+
+----------------
+
+# Draft structure
+
+## Phase 1: broad wrangling
+
+- Reading the articles
+- Reading the documentation
+- Downloading the data
+- Bulk importing the data
+- Quick introspection of common columns
+    - PRAGMA_INFO
+    - Concatenation
+    - Find columns with 14 commonalities
+- Quick unification
+    - CREATE TABLE AS SELECT, UNION ALL
+    - Manually rename fields for 2017 and 2018
+- Confirm general numbers:
+    
+    ```sql
+    SELECT year, 
+    COUNT(1) AS n 
+    FROM quick_unified
+    GROUP BY year 
+    ORDER BY year;
+
+    SELECT YEAR, race,
+    COUNT(1) AS n 
+    FROM quick_unified
+    GROUP BY year, race 
+    ORDER BY year, race;
+    ```
+
+## Phase 2: table-specific cleaning
+
+- Find inconsistencies in common columns
+- Per table data cleaning rules
+    - date/time cleaning
+    - renaming columns
+
+## Phase 3: reconciliation
+
+- Writing a lookup table for categorical columns, like crime description
