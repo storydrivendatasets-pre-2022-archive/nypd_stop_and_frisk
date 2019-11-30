@@ -8,7 +8,7 @@ include makefiles/sqlize.makefile
 .DEFAULT_GOAL := sqlize
 .PHONY : clean sqlize_clean
 
-sqlize: sqlize_clean sqlize_import_raw sqlize_quick_unify
+sqlize: sqlize_clean sqlize_import_raw sqlize_collate
 reboot: clean sqlize
 
 csvs: $(ALL_CSVS)

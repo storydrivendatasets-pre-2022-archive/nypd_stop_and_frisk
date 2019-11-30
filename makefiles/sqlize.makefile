@@ -5,7 +5,7 @@ SQLIZED_DBNAME = data/sqlized/nypd_stop_and_frisk.sqlite
 # located in src/sqlize/genscripts
 # This is because the import sql could theoretically be written out by hand,
 #  e.g. by someone who doesn't know how to shell script. But I am not that someone
-SQL_SCRIPT_IMPORT_RAW = src/sqlize/import_raw.sql
+SQL_SCRIPT_IMPORT_RAW = src/sqlize/import/import_raw.sql
 
 sqlize_clean:
 	test -f $(SQLIZED_DBNAME)  && rm $(SQLIZED_DBNAME) || true
@@ -23,8 +23,8 @@ $(SQL_SCRIPT_IMPORT_RAW): csvs
 sqlize_import_raw: $(SQL_SCRIPT_IMPORT_RAW)
 	sqlite3 $(SQLIZED_DBNAME) < $(SQL_SCRIPT_IMPORT_RAW)
 
-sqlize_quick_unify: sqlize_import_raw
-	sqlite3 $(SQLIZED_DBNAME) < src/sqlize/quick_unify_beta.sql
+sqlize_collate: sqlize_import_raw
+	sqlite3 $(SQLIZED_DBNAME) < src/sqlize/collate/beta_collate.sql
 
 # sqlize_schemas: $(SQLIZED_DBSCHEMA)
 

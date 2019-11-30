@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS quick_unified;
-CREATE TABLE quick_unified AS
+DROP TABLE IF EXISTS collated;
+CREATE TABLE collated AS
 SELECT year, pct, datestop, timestop, race, sex, age, crimsusp, arstmade, arstoffn, frisked, searched, sector FROM raw_2003 UNION ALL
 SELECT year, pct, datestop, timestop, race, sex, age, crimsusp, arstmade, arstoffn, frisked, searched, sector FROM raw_2004 UNION ALL
 SELECT year, pct, datestop, timestop, race, sex, age, crimsusp, arstmade, arstoffn, frisked, searched, sector FROM raw_2005 UNION ALL
@@ -48,8 +48,8 @@ SELECT
     FROM raw_2018
 ;
 
-CREATE INDEX year_race_idx_quick_unified ON quick_unified(year, race);
-CREATE INDEX pct_idx_quick_unified ON quick_unified(pct);
+CREATE INDEX year_race_idx_collated ON collated(year, race);
+CREATE INDEX pct_idx_collated ON collated(pct);
 
 
 

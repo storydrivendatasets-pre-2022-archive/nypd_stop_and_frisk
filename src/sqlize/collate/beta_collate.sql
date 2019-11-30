@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS quick_unified;
-CREATE TABLE quick_unified AS
+DROP TABLE IF EXISTS collated;
+CREATE TABLE collated AS
 SELECT '2003' AS year, pct, datestop, timestop, race, sex, age, crimsusp, arstmade, arstoffn, frisked, searched, sector FROM raw_2003 UNION ALL
 SELECT '2004' AS year, pct, datestop, timestop, race, sex, age, crimsusp, arstmade, arstoffn, frisked, searched, sector FROM raw_2004 UNION ALL
 SELECT '2005' AS year, pct, datestop, timestop, race, sex, age, crimsusp, arstmade, arstoffn, frisked, searched, sector FROM raw_2005 UNION ALL
