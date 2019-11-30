@@ -22,9 +22,10 @@ $(SQL_SCRIPT_IMPORT_RAW): csvs
 
 sqlize_import_raw: $(SQL_SCRIPT_IMPORT_RAW)
 	sqlite3 $(SQLIZED_DBNAME) < $(SQL_SCRIPT_IMPORT_RAW)
+	sqlite3 $(SQLIZED_DBNAME) < src/sqlize/import/view_meta_schema.sql
 
 sqlize_collate: sqlize_import_raw
-	sqlite3 $(SQLIZED_DBNAME) < src/sqlize/collate/beta_collate.sql
+	sqlite3 $(SQLIZED_DBNAME) < src/sqlize/collate_quick/beta_collate.sql
 
 # sqlize_schemas: $(SQLIZED_DBSCHEMA)
 

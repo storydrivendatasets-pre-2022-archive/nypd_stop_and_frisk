@@ -65,10 +65,13 @@ https://www1.nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page
     - PRAGMA_INFO
     - Concatenation
     - Find columns with 14 commonalities
-- Quick unification
-    - CREATE TABLE AS SELECT, UNION ALL
-    - Manually rename fields for 2017 and 2018
-- Confirm general numbers:
+
+
+## Phase 2 Quick collation
+
+- CREATE TABLE AS SELECT, UNION ALL
+- Manually rename fields for 2017 and 2018
+- Confirm general numbers for year and race
     
     ```sql
     SELECT year, 
@@ -84,13 +87,32 @@ https://www1.nyc.gov/site/nypd/bureaus/patrol/find-your-precinct.page
     ORDER BY year, race;
     ```
 
-## Phase 2: table-specific cleaning
+## Phase 3: Detailed collation
+
+Get as many common fields as possible
+
+- Location information (street address)
+- physical description: weight, height, age
+- Use of force flags
+- Reasons for stop flags
+- Reasons for frisk flags
+- Reasons for search flags
+- Suspected crime description
+
+
+## Phase 4: Wrangling by field
+
+- datestop
+- timestop
+- race 
+- flag fields
 
 - Find inconsistencies in common columns
 - Per table data cleaning rules
     - date/time cleaning
     - renaming columns
 
-## Phase 3: reconciliation
 
-- Writing a lookup table for categorical columns, like crime description
+## Phase 4.5 wrangling w/ lookup tables
+
+- Lookup tables for crime codes

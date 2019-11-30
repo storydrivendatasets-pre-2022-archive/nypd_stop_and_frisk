@@ -12,3 +12,59 @@
   landing_page: https://www1.nyc.gov/site/nypd/stats/reports-analysis/stopfrisk.page
   description: |
     A ZIP archive of schema info for stop and frisk data, for each year
+
+
+uf250-rev1102.pdf:
+  url: https://www1.nyc.gov/assets/nypd/downloads/pdf/public_information/TR534_FINALCompiled.pdf
+  landing_page: https://www.rand.org/pubs/technical_reports/TR534.html
+  description: |
+    A copy of Unified Form 250, as clipped from pages 54-55, via the 2007 article, RAND/Ridgeway's "Analysis of Racial Disparities in the New York Police Department’s Stop, Question, and Frisk Practices"
+
+
+uf250-rev-05-11.pdf:
+  url: https://ccrjustice.org/sites/default/files/assets/files/11%2025%2013%20Opp%20to%20Mot%20to%20Intervene%20Decl%20of%20D%20Charney%20Ex%20H.pdf
+  description: |
+    May 2011 revision of Unified Form 250
+
+
+ccrb-analysis-2001-06.pdf:
+  url: https://www1.nyc.gov/assets/ccrb/downloads/pdf/policy_pdf/issue_based/20010601_sqf.pdf
+  description: |
+
+      STREET STOP ENCOUNTER REPORT: AN
+    ANALYSIS OF CCRB COMPLAINTS RESULTING
+    FROM THE NEW YORK POLICE DEPARTMENT'S
+    "STOP & FRISK" PRACTICES
+
+ny-oag-1999-stop-frisk-investigation.pdf:
+    url: https://ag.ny.gov/sites/default/files/pdfs/bureaus/civil_rights/stp_frsk.pdf
+    description: |
+      NY Attorney General civil rights investigation into NYPD Stop and Frisk
+
+      ...in March 1999, the
+        Attorney General announced the commencement of the OAG’s “stop & frisk”
+        investigation. The investigation’s overarching purpose is to understand the “stop &
+        frisk” experience in New York City, to analyze the practices of NYPD officers on a
+        system-wide basis...
+
+
+ccrb-staff-memo-2015-01-08.pdf:
+  url: http://www.nyc.gov/html/ccrb/downloads/pdf/Staff%20Memo_20140108.pdf
+  description: |
+
+    Complete UF-250 forms. Because police officers in this study often did not
+      document stops by submitting the required UF-250 forms, the CCRB recommended that
+      the police department continue to work to better capture data regarding its stop and frisk
+      practices.
+
+    (5) The CCRB also recommended that UF-250 forms be computerized.
+
+    NYPD Response: we were informed by the police department that it was in the process
+      of implementing a system in which stop-and-frisk data was comprehensively
+      computerized and made readily accessible to line supervisors for use in supervision.
+
+pg212-11-stop-frisk-2014-08:
+  url: http://www.nyc.gov/html/ccrb/downloads/pdf/pg212-11-stop-frisk.pdf
+  description: |
+
+    NYPD Patrol Guide, P.G. 212-11 Stop And Frisk, effective 2014-08-01
